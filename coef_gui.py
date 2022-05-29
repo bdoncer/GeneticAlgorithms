@@ -2,7 +2,7 @@ import tkinter as tk
 from coefficients import Coefficients,function_inputs,desired_output
 
 
-class GUI:
+class CoefGUI:
     def __init__(self):
         self.coef = Coefficients()
         self.picture_size = 420
@@ -56,4 +56,4 @@ class GUI:
 
 
 
-gui = GUI()
+#gui = CoefGUI()
