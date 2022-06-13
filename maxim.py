@@ -4,10 +4,10 @@ import numpy as np
 
 
 def function(x_tab):
-    return [pow(xi,2) for xi in x_tab]
+    return [np.cos(xi) for xi in x_tab]
 
 def function_to_plot(x):
-    return  pow(x,2)
+    return  np.cos(x)
 
 
 
@@ -23,9 +23,7 @@ class MaxCtr:
     def result_clicked(self):
         alg = BeesAlgorithm(function, self.left_boundary, self.right_boundary, ns=0, nb=14, ne=1, nrb=5, nre=30,
                             stlim=10)
-
         alg.performFullOptimisation(max_iteration=5000)
-
         best = alg.best_solution
         return best.values,best.score
 

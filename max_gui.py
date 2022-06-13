@@ -11,12 +11,6 @@ class MaxGUI:
         self.root.title('Find maximum')
 
 
-        self.func_text = tk.Text(self.root, height=2, width=20)
-        self.func_label = tk.Label(self.root, text="Write your function (with x as unknown)")
-        self.func_label.config(font=("Courier", 14))
-        self.func_label.pack()
-        self.func_text.pack()
-
         self.left_b_text = tk.Text(self.root, height=2, width=10)
         self.left_b_label = tk.Label(self.root, text="Write left boundary")
         self.left_b_label.config(font=("Courier", 14))

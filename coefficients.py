@@ -14,8 +14,8 @@ class Coefficients:
     def __init__(self):
         self.function_inputs = None
         self.desired_output = None
-        self.sol_per_pop = 50
         self.num_genes = None
+        self.sol_per_pop = 50
         self.init_range_low = -2
         self.init_range_high = 5
         self.mutation_percent_genes = 50
